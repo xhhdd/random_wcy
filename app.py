@@ -9,10 +9,6 @@ from pywebio import config
 import requests
 from random import sample
 
-from flask import Flask, request
-
-app = Flask(__name__)
-
 
 
  
@@ -22,7 +18,7 @@ config(title='随机数生成',
 description='陈老师专用的随机数生成器',
 theme='minty'
 )
-@app.route('/')
+
 def main():
     # 更改网页的favico
     image_url="https://cdn.xhhdd.cc/uPic2/dxMSIl.jpeg"
